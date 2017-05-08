@@ -17,6 +17,9 @@
 	height: 100%;
 	width: 100%;
 	z-index: 2;
+	border-bottom: 2px solid #39FF14;
+	padding-bottom: 35px;
+	padding-top: 35px;
 }
 
 p {
@@ -40,7 +43,7 @@ header {
 }
 
 .fixed-title {
-	box-shadow: 0 0 2px 1px rgba(0,0,0,0.1);
+	box-shadow: 0 0 2px 1px #39FF14;
 	font-family: 'Grand Hotel', cursive;
 
 	-webkit-backface-visibility: hidden;
@@ -195,7 +198,7 @@ ul {
 }
 
 li {
-	border-bottom: 1px solid #e3e3e3;
+	border-bottom: 1px solid #39FF14;
 	padding-bottom: 35px;
 	padding-top: 35px;
 }
@@ -258,5 +261,3 @@ li .title {
 .link a:hover {
 	border-color: #39FF14;
 }
-
-/****** list of sites ends ******/
