@@ -1,0 +1,262 @@
+/*!
+ * ipsum-love-generators
+ *
+ * Copyright (C) 2017 Trista McCleary, http://codeandcoffeelife.com/
+ */
+/********************************************/
+
+
+.welcome {
+	font-family: 'Lobster', cursive;
+	color: #ff0437;
+	position: relative;
+	overflow: hidden;
+	/*background: pink;*/
+	margin-top: 60px;
+	font-size: 28px;
+	height: 100%;
+	width: 100%;
+	z-index: 2;
+}
+
+p {
+  margin: 50px;
+  font-weight: 200;
+  margin-bottom: 10px;
+  display: inline-block;
+	/*text-align: center;*/
+}
+
+header {
+	font-family: 'Grand Hotel', cursive;
+	position: relative;
+	overflow: hidden;
+	background: #111;
+	margin-top: .4px;
+	font-size: 36px;
+	height: 500px;
+	width: 100%;
+	z-index: 2;
+}
+
+.fixed-title {
+	box-shadow: 0 0 2px 1px rgba(0,0,0,0.1);
+	font-family: 'Grand Hotel', cursive;
+
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-i-transform: translateZ(0);
+	transform: translateZ(0);
+
+	padding-right: 80px;
+	padding-left: 80px;
+	text-align: center;
+	background: #fff;
+	line-height: 60px;
+	font-size: 52px;
+	position: fixed;
+	color: #39FF14;
+	height: 80px;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 3;
+}
+
+
+.heading {
+	display: inline-block;
+	text-align: center;
+	/*float: left;*/
+	width: 100%;
+}
+
+.heading .translatable {
+	-webkit-transition: width 500ms;
+	-moz-transition: width 500ms;
+	-ms-transition: width 500ms;
+	-o-transition: width 500ms;
+	transition: width 500ms;
+}
+
+
+
+.fixed-title, .active .share-links {
+	right: 80px;
+}
+
+
+/********* Header article slides begin **********/
+article {
+	font-family: 'Roboto Slab', serif;
+	position: absolute;
+	padding: 80px;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+
+	-webkit-transform: translateX(100%);
+	-moz-transform:    translateX(100%);
+	-ms-transform:     translateX(100%);
+	-o-transform:      translateX(100%);
+	transform:         translateX(100%);
+
+	-webkit-transition: -webkit-transform 700ms, opacity 700ms;
+	-moz-transition: -moz-transform 700ms, opacity 700ms;
+	-ms-transition: -ms-transform 700ms, opacity 700ms;
+	-o-transition: -o-transform 700ms, opacity 700ms;
+	transition: transform 700ms, opacity 700ms;
+}
+
+article .background svg {
+	display: none;
+	margin-left: -250px;
+	margin-top: -250px;
+	position: absolute;
+	height: 500px;
+	width: 500px;
+	z-index: 1;
+	left: 50%;
+	top: 50%;
+}
+
+.background path, .background polygon {
+	fill: rgba(255,255,255,0.2);
+}
+
+article .feature {
+	z-index: 2;
+	margin-bottom: 20px;
+	position: relative;
+	text-align: left;
+	font-weight: 400;
+	font-size: 18px;
+	color: #fff;
+}
+
+article .text {
+	position: relative;
+	z-index: 2;
+	width: 100%;
+	height: 250px;
+	font-size: 60px;
+	text-align: left;
+	overflow: hidden;
+	font-weight: 200;
+	margin-bottom: 10px;
+  text-overflow: ellipsis;
+}
+
+article .fade {
+	opacity: 0.3;
+
+	-webkit-transform: translateX(0%);
+	-moz-transform:    translateX(0%);
+	-ms-transform:     translateX(0%);
+	-o-transform:      translateX(0%);
+	transform:         translateX(0%);
+}
+
+article .active {
+	z-index: 10;
+	opacity: 1;
+	left: 0;
+
+	-webkit-transform: translateX(0%);
+	-moz-transform:    translateX(0%);
+	-ms-transform:     translateX(0%);
+	-o-transform:      translateX(0%);
+	transform:         translateX(0%);
+}
+
+.intro {
+	font-weight: 400;
+	font-size: 18px;
+	color: #fff;
+}
+
+/********* Header article ends **********/
+
+
+/****** list of sites ******/
+ul {
+	margin-bottom: 700px;
+	margin-top: 0;
+	padding-top: 10px;
+	background: #fff;
+	z-index: 2;
+	position: relative;
+	font-family: 'Roboto Slab', serif;
+	padding-right: 80px;
+	padding-left: 80px;
+	list-style: none;
+}
+
+li {
+	border-bottom: 1px solid #e3e3e3;
+	padding-bottom: 35px;
+	padding-top: 35px;
+}
+
+li:last-child {
+	padding-bottom: 50px;
+	border-bottom: 0;
+}
+
+li .title {
+	font-weight: 400;
+	font-size: 18px;
+	color: #333;
+}
+
+.sample {
+	margin-bottom: 7px;
+	margin-top: 2px;
+	font-size: 44px;
+	color: inherit;
+
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-weight: 300;
+	overflow: hidden;
+	height: 65px;
+}
+
+.link {
+	font-size: 13px;
+	color: #999;
+}
+
+.options a, .link a {
+
+	-webkit-transition: all 300ms;
+	-moz-transition: all 300ms;
+	-ms-transition: all 300ms;
+	-o-transition: all 300ms;
+	transition: all 300ms;
+
+	border: 3px solid #84DCCF;
+	text-decoration: none;
+	border-radius: 3px;
+	padding: 4px;
+	padding-right: 8px;
+	padding-left: 8px;
+	margin-left: 5px;
+	font-size: 13px;
+	opacity: 1;
+	color: #333;
+}
+
+.options a {
+	border-color: inherit;
+	font-size: 14px;
+	color: inherit;
+}
+
+.link a:hover {
+	border-color: #39FF14;
+}
+
+/****** list of sites ends ******/
